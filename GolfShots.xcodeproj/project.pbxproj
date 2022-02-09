@@ -184,10 +184,10 @@
 		AAF1D26727B3F16700ED2ED3 /* GolfShots */ = {
 			isa = PBXGroup;
 			children = (
-				AAA5FC8C27B3FDF700F7A590 /* Extensions */,
 				AAA5FC7027B3FD1100F7A590 /* Application */,
 				AAA5FC8027B3FDCC00F7A590 /* Network */,
 				AAA5FC8327B3FDE400F7A590 /* Helpers */,
+				AAA5FC8C27B3FDF700F7A590 /* Extensions */,
 				AAA5FC6D27B3FCEF00F7A590 /* Common */,
 				AAF1D26C27B3F16700ED2ED3 /* ViewController.swift */,
 				AAF1D26E27B3F16700ED2ED3 /* Main.storyboard */,
@@ -204,7 +204,6 @@
 				C6A7CCF02371EAC11597C4C8 /* Pods-GolfShots.debug.xcconfig */,
 				AF70C74CE4BDB2B940BF7542 /* Pods-GolfShots.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
