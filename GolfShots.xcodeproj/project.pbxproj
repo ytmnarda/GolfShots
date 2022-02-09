@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572F53A1DD1D2417DD9D72E7 /* Pods_GolfShots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1D49D87960047BAC8C2DC5 /* Pods_GolfShots.framework */; };
 		AAA5FC6C27B3FCEC00F7A590 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5FC6B27B3FCEC00F7A590 /* Constants.swift */; };
 		AAA5FC7727B3FD6B00F7A590 /* ShotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5FC7627B3FD6B00F7A590 /* ShotsViewController.swift */; };
 		AAA5FC7927B3FD9600F7A590 /* ShotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5FC7827B3FD9600F7A590 /* ShotsViewModel.swift */; };
@@ -48,6 +49,9 @@
 		AAF1D27127B3F16800ED2ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF1D27427B3F16800ED2ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAF1D27627B3F16800ED2ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF70C74CE4BDB2B940BF7542 /* Pods-GolfShots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfShots.release.xcconfig"; path = "Target Support Files/Pods-GolfShots/Pods-GolfShots.release.xcconfig"; sourceTree = "<group>"; };
+		C6A7CCF02371EAC11597C4C8 /* Pods-GolfShots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfShots.debug.xcconfig"; path = "Target Support Files/Pods-GolfShots/Pods-GolfShots.debug.xcconfig"; sourceTree = "<group>"; };
+		DF1D49D87960047BAC8C2DC5 /* Pods_GolfShots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolfShots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572F53A1DD1D2417DD9D72E7 /* Pods_GolfShots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C95CE115D4147B47A2EC9A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF1D49D87960047BAC8C2DC5 /* Pods_GolfShots.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAA5FC6D27B3FCEF00F7A590 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +168,8 @@
 			children = (
 				AAF1D26727B3F16700ED2ED3 /* GolfShots */,
 				AAF1D26627B3F16700ED2ED3 /* Products */,
+				FB32FFB2D8FB22F0CB0B6094 /* Pods */,
+				9C95CE115D4147B47A2EC9A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +198,16 @@
 			path = GolfShots;
 			sourceTree = "<group>";
 		};
+		FB32FFB2D8FB22F0CB0B6094 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7CCF02371EAC11597C4C8 /* Pods-GolfShots.debug.xcconfig */,
+				AF70C74CE4BDB2B940BF7542 /* Pods-GolfShots.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAF1D27927B3F16800ED2ED3 /* Build configuration list for PBXNativeTarget "GolfShots" */;
 			buildPhases = (
+				AF145A7F4683D05D70A9DC5B /* [CP] Check Pods Manifest.lock */,
 				AAF1D26127B3F16700ED2ED3 /* Sources */,
 				AAF1D26227B3F16700ED2ED3 /* Frameworks */,
 				AAF1D26327B3F16700ED2ED3 /* Resources */,
+				1B181142FCD7BCB21B1B752B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +276,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B181142FCD7BCB21B1B752B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GolfShots/Pods-GolfShots-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GolfShots/Pods-GolfShots-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GolfShots/Pods-GolfShots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF145A7F4683D05D70A9DC5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GolfShots-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAF1D26127B3F16700ED2ED3 /* Sources */ = {
@@ -412,6 +481,7 @@
 		};
 		AAF1D27A27B3F16800ED2ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A7CCF02371EAC11597C4C8 /* Pods-GolfShots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +510,7 @@
 		};
 		AAF1D27B27B3F16800ED2ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF70C74CE4BDB2B940BF7542 /* Pods-GolfShots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
