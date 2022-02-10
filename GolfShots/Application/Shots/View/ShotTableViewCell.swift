@@ -54,8 +54,8 @@ class ShotTableViewCell: UITableViewCell {
         
         guard let vm = vm else { return }
         
-        self.xValueLabel.text = vm.xValue
-        self.yValueLabel.text = vm.yValue
+        self.xValueLabel.text = "X :\(vm.xValue)"
+        self.yValueLabel.text = "Y :\(vm.yValue)"
         self.statusImageView.image = vm.inOut ? (UIImage(named: "check")) : UIImage(named: "wrong")
      
         let playImage = UIImage(systemName: "play.circle")?.resizeImage(targetSize: CGSize(width: 35, height: 35))?.withTintColor(.green)

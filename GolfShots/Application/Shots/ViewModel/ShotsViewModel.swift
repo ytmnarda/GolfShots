@@ -87,7 +87,7 @@ class ShotsViewModel {
         
         for shot in shots {
             
-            let cellVM = ShotCellViewModel(xValue: "X : \(shot.shotPosX!)", yValue: "Y : \(shot.shotPosY!)", inOut: shot.inOut!, point: shot.point!, segment: shot.segment!,id:shot.id!, hasShotVideo: hasShotAssociatedWithVideo(shot: shot))
+        let cellVM = ShotCellViewModel(xValue: shot.shotPosX!, yValue: shot.shotPosY!, inOut: shot.inOut!, point: shot.point!, segment: shot.segment!,id:shot.id!, hasShotVideo: hasShotAssociatedWithVideo(shot: shot))
             
             _shotCellViewModel.append(cellVM)
         }
@@ -122,8 +122,8 @@ class ShotsViewModel {
 
 struct ShotCellViewModel {
     
-    var xValue:String
-    var yValue:String
+    var xValue:Double
+    var yValue:Double
     var inOut:Bool
     var point:Int
     var segment:Int
